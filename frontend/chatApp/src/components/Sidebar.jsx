@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 
 const Sidebar = (props) => {
 
 
+    const navigate = useNavigate()
 
     const logout = () => {
         localStorage.removeItem("login")
         localStorage.removeItem("user")
-        window.location.reload()
+        navigate("/login")
     }
 
     return (
