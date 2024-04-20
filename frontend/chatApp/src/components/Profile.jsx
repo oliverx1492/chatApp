@@ -14,7 +14,7 @@ const Profile = () => {
 
     const fetchProfile = async () => {
         try {
-            const response = await fetch("http://localhost:4000/getProfile", {
+            const response = await fetch("https://chatapp-79dt.onrender.com/getProfile", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -68,7 +68,7 @@ const Profile = () => {
 
         const newData = {...data, username: user}
         try {
-            const response = await fetch("http://localhost:4000/editProfile", {
+            const response = await fetch("https://chatapp-79dt.onrender.com/editProfile", {
                 method: "POST",
                 headers: {
                     "Content-Type":"application/json"

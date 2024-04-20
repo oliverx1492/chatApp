@@ -25,7 +25,7 @@ const Chat = () => {
     const fetchChat = async (userData) => {
 
         try {
-            const response = await fetch("http://localhost:4000/getChat", {
+            const response = await fetch("https://chatapp-79dt.onrender.com/getChat", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -64,7 +64,7 @@ const Chat = () => {
         setChatLoaded(true)
 
         try {
-            const response = await fetch("http://localhost:4000/loadChat", {
+            const response = await fetch("https://chatapp-79dt.onrender.com/loadChat", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"
@@ -114,7 +114,7 @@ const Chat = () => {
         console.log(newMessageObject)
 
         try {
-            const response = await fetch("http://localhost:4000/newMessage", {
+            const response = await fetch("https://chatapp-79dt.onrender.com/newMessage", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

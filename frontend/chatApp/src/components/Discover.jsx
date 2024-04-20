@@ -14,7 +14,7 @@ const Discover = () => {
 
     const fetchUsers = async () => {
         try {
-            const response = await fetch("http://localhost:4000/discover", {
+            const response = await fetch("https://chatapp-79dt.onrender.com/discover", {
                 method: "POST",
                 headers: {
                     "Content-Type":"application/json"
@@ -55,7 +55,7 @@ const Discover = () => {
         console.log("CHAT CREATOR", user)
 
         try {
-            const response = await fetch("http://localhost:4000/startChat", {
+            const response = await fetch("https://chatapp-79dt.onrender.com/startChat", {
                 method: "POST",
                 headers: {
                     "Content-Type":"application/json"

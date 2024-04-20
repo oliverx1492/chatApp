@@ -13,7 +13,7 @@ const Signup = () => {
         console.log(data)
 
         try {
-            const response = await fetch("http://localhost:4000/signup", {
+            const response = await fetch("https://chatapp-79dt.onrender.com/signup", {
                 method: "POST",
                 headers: {
                     "Content-Type":"application/json"
